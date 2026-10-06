@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                echo 'Code checked out from GitHub'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Application test completed'
+            }
+        }
+
+    }
+}
